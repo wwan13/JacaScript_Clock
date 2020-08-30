@@ -1,0 +1,39 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+
+  <title>Likelion 8th Clock</title>
+</head>
+
+<body>
+  <h1 class="center-align">🦁 멋쟁이 사자처럼 8기 🦁</h1>
+
+  <div class="digital-clock center-align">
+    00:00:00:000
+  </div>
+
+  <div class="center-align">
+    <div class="analog-clock">
+      <div class="hour">
+        <div id="h" class="h"></div>
+      </div>
+      <div class="minute">
+        <div id="m" class="m"></div>
+      </div>
+      <div class="second">
+        <div id="s" class="s"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="{% static 'index.js' %}"></script>
+</body>
+
+</html>
